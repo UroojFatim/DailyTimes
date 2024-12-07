@@ -4,7 +4,7 @@ const opinionData = [
       title: "The future of climate action",
       date: "December 04, 2024",
       content: "Why global leaders must act now.",
-      image: "/path_to_image2.jpg",
+      image: "htt;;;",
     },
   ];
   
