@@ -13,17 +13,17 @@ const Layout = ({ children }) => {
   return (
     <div className="flex bg-gray-100 p-4 gap-3">
       {/* Left Sidebar */}
-      <div className="w-[30%]">
+      <div className="hidden xl:block xl:w-[30%]">
         <BusinessHighlights posts={BusinessHighlightsData} onPostClick={handlePostClick} />
       </div>
 
       {/* Middle Content */}
-      <div className="bg-white border border-sky-300">
+      <div className="bg-white border border-sky-300 flex-1">
         {children}
       </div>
 
       {/* Right Sidebar */}
-      <div className="w-[30%]">
+      <div className="hidden lg:block lg:w-[30%]">
         <EditorsPick />
       </div>
     </div>
