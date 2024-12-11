@@ -10,21 +10,37 @@ const TopPost = () => {
   });
 
   return (
-    <div className="flex  items-start space-y-2 p-3">
-      <span className="text-sm text-gray-600">
-        {currentDate}
-      </span>
-      {/* Top Post Label */}
-      <div className="bg-red-600 text-white px-3 py-1 rounded-full text-sm font-bold">
-        TOP POST
-      </div>
-      
-      {/* Post Description */}
-      <p className="text-xs">
-        Did you know each insect is a host to ten bacterial species?
-      </p>
-
+    <div className="hidden lg:flex justify-between items-center p-3 border-b border-gray-200">
       {/* Current Date */}
+      <span className="text-sm text-gray-600">{currentDate}</span>
+
+      {/* Top Post Section */}
+      <div className="flex items-center space-x-2">
+        <div className="bg-red-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+          TOP POST
+        </div>
+        <p className="text-sm text-blue-900 font-medium">
+          Did you know a jockey once won a race after he had died?
+        </p>
+      </div>
+
+      {/* Social Icons and Subscribe Button */}
+      <div className="flex items-center space-x-4">
+        {/* Social Media Icons */}
+        <div className="flex space-x-2 text-gray-600">
+          <i className="fab fa-facebook-f"></i>
+          <i className="fab fa-twitter"></i>
+          <i className="fab fa-instagram"></i>
+          <i className="fab fa-youtube"></i>
+          <i className="fab fa-whatsapp"></i>
+          <i className="fab fa-tiktok"></i>
+          <i className="fab fa-linkedin-in"></i>
+        </div>
+        {/* Subscribe Button */}
+        <button className="bg-red-600 text-white text-sm font-bold px-4 py-2 rounded">
+          SUBSCRIBE NEWSLETTER
+        </button>
+      </div>
     </div>
   );
 };
